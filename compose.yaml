@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  pubsub:
+    image: google/cloud-sdk:emulators
+    ports:
+      - "8089:8080"
+    command: gcloud beta emulators pubsub start --project='project' --host-port='0.0.0.0:8080'
+    platform: "linux/amd64"
