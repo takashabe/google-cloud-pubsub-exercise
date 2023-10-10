@@ -12,7 +12,7 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-var projectID = "casting-one-dev"
+var projectID = "emulator"
 
 func init_() {
 	// client生成時点でemulator設定しておく必要がある
